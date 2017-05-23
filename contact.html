@@ -52,36 +52,9 @@
     <!-- Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
 </head>
   </head>
   <body>
-    <header>
         <div>
         <nav>
           <div class="menu">
@@ -96,17 +69,28 @@ $(document).ready(function(){
   </div>
 
   <div class="menu-overlay">
+    <a href="index.html">Home</a>
     <a href="#">About us</a>
     <a href="#">Services</a>
     <a href="#">Projects</a>
-    <a href="#">Contact</a>
+    <a class="current" href="contact.html">Contact</a>
   </div>
-      </nav>
-            <p>Surprix:<br>
-            Always be ahead of yourself</p>
-            <div class="ghostbtn">
-            <a href="#intro"><img src="assets/images/arrow-down-sign-to-navigate-2.svg"></a></div>
-        </div>
-    </header>
+</div>
+ <div id="map" style="height:100vh;"></div>
+    <script>
+function initMap() {
+  var myCenter = new google.maps.LatLng(51.086789,3.670192);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 15};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+  
+  var marker = new google.maps.Marker({position:myCenter, icon: image});
+  marker.setMap(map);
+}
+</script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChH9Z--QM1vqkJnQkJQOsj7CBEk5rwnfw&callback=initMap"
+  type="text/javascript"></script>
+
   </body>
 </html>

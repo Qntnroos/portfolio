@@ -25,6 +25,7 @@ header{
     height: 100vh;
     position: relative;
 }
+
 /******************************************
     Navigation start
 ******************************************/
@@ -37,7 +38,7 @@ header{
 }
 
 .menu-button {
-    background-color: rgb(229,229,229);;
+    background-color: rgb(229,229,229);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -129,6 +130,10 @@ header{
     background-color: rgb(51,73,95);
     color: rgb(229,229,229);
 }
+.menu-overlay > .current{
+    background-color: rgb(51,73,95);
+    color: rgb(229,229,229);
+}
 /******************************************
     Navigation end
 ******************************************/
@@ -200,6 +205,11 @@ header p{
 .sf-grid__column-1 a i{
     display: block;
     margin: auto;
+}
+#map{
+    float: right;
+    width: 50%;
+    border: solid 1px rgb(51,73,95);
 }
 footer{
     width: 100%;

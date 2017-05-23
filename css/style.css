@@ -15,11 +15,11 @@ body{
     background-repeat: no-repeat;
 
 }
-::selection{
+/*::selection{
     background: #FF0;
-}
+}*/
 header{
-    background-image: url('../images/pexels-photo-173427.png');
+    background-image: url('../assets/images/pexels-photo-173427.png');
     background-size:cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -137,8 +137,7 @@ header p{
     color:  #e5e5e5;
     background-color: rgba(0,0,0,0.6);
     padding: 20px;
-    width: 60%;
-    margin-left: 20%;
+    margin-left: 21.5%;
     margin-top: 300px;
     position: absolute;
     font-weight: 100;
@@ -149,7 +148,7 @@ header p{
     padding: 10px;
     margin-left: 49%;
     position: absolute;
-    margin-top:1000px;
+    top: 90%;
 }
 .ghostbtn:hover{
     background-color:rgba(51,73,95,1);
@@ -161,16 +160,23 @@ header p{
    height: 100vh; 
 }
 .intro div{
-    margin-top: 20px;
-    border: 2px solid black;
+    margin-top: 50px;
+
 }
 .icons{
     font-size: 64px;
     text-decoration: none;
-    color:rgb(229,229,229);
+    color: rgba(51,73,95,0.6);
     border-radius: 0px;
-    margin-left: 37.5%;
-    transition: 1s all ease;
+    text-align: center;
+
+    transition: 0.7s all ease;
+}
+.fa-wordpress{
+    margin-left: 41%;
+}
+.fa-html5,.fa-database {
+    margin-left: 43%;
 }
 .icons:hover{
     color: rgba(51,73,95,1);
@@ -179,4 +185,29 @@ header p{
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     text-align: center;
+}
+.sf-grid__column-6{
+    background-color: rgb(229,229,229);
+    height: 400px;
+    border: 1px solid rgb(51,73,95);
+}
+.sf-grid__column-1{
+    margin-bottom: 50px;
+}
+.sf-grid__column-1 a{
+    text-decoration: none;
+}
+.sf-grid__column-1 a i{
+    display: block;
+    margin: auto;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: rgb(51,73,95);
+    color:rgb(229,229,229);
+}
+footer a{
+    color: rgb(229,229,229);
 }

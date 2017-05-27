@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Surprix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+        <nav>
+          <div class="menu">
+    <span class="menu-button"></span>
+    <a href="#" class="menu-link">
+      <span class="menu-icon">
+        <span class="menu-line menu-line-1"></span>
+        <span class="menu-line menu-line-2"></span>
+        <span class="menu-line menu-line-3"></span>
+      </span>
+    </a>
+  </div>
+
+  <div class="menu-overlay">
+    <a href="#main">About</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+  </div>
+      </nav>
+            <p>Digital styleguide: Surprix</p>
+            <div class="ghostbtn">
+            <a href="#main"><img src="images/arrow-down-sign-to-navigate-2.svg"></a></div>
+        </div>
+    </header>
+    <section class="main" id="main">
+    
+    
+    <section id="kleur">
+        <h1>Colors</h1>
+        <hr>
+      <div class="colors colors1">
+        <div class="color color1">
+        </div>
+          <p><span>HEX:</span> #e5e5e5</p>
+          <p>RGB: 229 229 229</p>
+          <p>HSV: 0 0 90</p>
+          <p>CMYK: 0 0 0 10</p>
+          </div>
+          <div class="colors">
+      <div class="color color2"></div>
+          <p>HEX: #33495f</p>
+          <p>RGB: 51 73 95</p>
+          <p>HSV: 210 46 37</p>
+          <p>CMYK: 46 23 0 63</p>
+          </div>
+          <div class="colors">
+      <div class="color color3"></div>
+          <p>HEX: #32acfc</p>
+          <p>RGB: 50 172 252</p>
+          <p>HSV: 204 80 99</p>
+          <p>CMYK: 80 32 0 1</p>
+      </div>
+      <div class="colors colors4">
+      <div class="color color4"></div>
+          <p>HEX: #fcf7f8</p>
+          <p>RGB: 252 247 248</p>
+          <p>HSV: 348 2 99</p>
+          <p>CMYK: 0 2 2 1</p>
+      </div>
+      <div class="colors">
+      <div class="color color5"></div>
+          <p>HEX: #ffffff</p>
+          <p>RGB: 255 255 255</p>
+          <p>HSV: 0 0 100</p>
+          <p>CMYK: 0 0 0 0</p>
+      </div>
+
+        
+      <div class="clear"></div>
+    </section>
+    <section id="typo">
+         <h1>Typography</h1>
+         <hr>
+         <h1>Always be ahead of yourself&lt;h1&gt;</h1>
+         <h2>Always be ahead of yourself&lt;h2&gt;</h2>
+         <h3>Always be ahead of yourself&lt;h3&gt;</h3>
+         <h4>Always be ahead of yourself&lt;h4&gt;</h4>
+         <h5>Always be ahead of yourself&lt;h5&gt;</h5>
+         <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.&lt;p&gt;</p>
+
+         <p>The used font is: Quicksand</p>
+    </section>
+    <section class="buttons">
+      <h1>Buttons, Icons + Hover</h1>
+        <hr>
+        <div class="btns">
+        <h2>Buttons:</h2>
+        <button>Hover me</button>
+        <p>Regular button</p>
+        <button class="btn1">Confirmed</button>
+        <p>Confirmed button</p>
+         <button class="btn2">Error</button>
+        <p>Error button</p>
+        </div>
+
+        <div class="btns btns2">
+        <h2>Icons:</h2>
+        <a href="https://www.facebook.com/quinten.roos.3" class="fa fa-facebook"></a>
+        <p>Facebook</p>
+        <a href="#" class="fa fa-linkedin"></a>
+        <p>Linked In</p>
+        <a href="https://www.instagram.com/roos_quinten/" class="fa fa-instagram"></a>
+        <p>Instagram</p>
+        </div>
+
+    </section>
+    <section class="contact">
+      <h1>Contact</h1>
+        <hr>
+        <div id="map" style="height:500px;"></div>
+        <form id="form" class="topBefore">
+        <h2>Ask us your question(s):</h2>
+        <hr>
+        <input id="name" type="text" placeholder="FULL NAME">
+        <input id="email" type="text" placeholder="E-MAIL">
+        <textarea id="message" type="text" placeholder="QUESTION OR REMARK"></textarea>
+        <input id="submit" type="submit" value="Send us your Question">
+
+        </form>
+
+    </section>
+    </section>
+    <script>
+function mapsyMap() {
+  var myCenter = new google.maps.LatLng(51.086789,3.670192);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 15};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9OFTKYjtbsQ0Jvyu028QtS-UzpubD8Vk&callback=myMap"></script>
+</body>
+</html>

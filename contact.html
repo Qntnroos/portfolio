@@ -8,7 +8,7 @@
     <!-- Mobile Viewport -->
 	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Most important SEO tag -->
-    <title>Surprix</title>
+    <title>Surprix - Design Agency</title>
     <!-- Other SEO friendly tags -->	
     <meta name="description" content="Lees hier alles over nieuwe media, html5 en andere ontwikkelingen in webdevelopment en mobile development. De docenten NMD willen graag hun kennis delen met jou!">
     <meta name="keywords" content="HTML5, JavaScript, jQuery, CSS3">
@@ -70,16 +70,28 @@
 
   <div class="menu-overlay">
     <a href="index.html">Home</a>
-    <a href="#">About us</a>
-    <a href="#">Services</a>
-    <a href="#">Projects</a>
-    <a class="current" href="contact.html">Contact</a>
+    <a href="#">Over Ons</a>
+    <a href="#">Diensten</a>
+    <a href="projects.html">Projecten</a>
+    <a href="contact.html" class="current">Contact</a>
   </div>
 </div>
- <div id="map" style="height:100vh;"></div>
+  <div>
+        <form id="form">
+        <h2>Ask us your question(s):</h2>
+        <hr>
+        <input id="name" type="text" placeholder="FULL NAME">
+        <input id="email" type="text" placeholder="E-MAIL">
+        <input id="subject" type="text" placeholder="SUBJECT">
+        <textarea id="message" type="text" placeholder="QUESTION OR REMARK"></textarea>
+        <input id="submit" type="submit" value="Send us your Question">
+
+        </form>
+  </div>
+  <div id="map" style="height:100vh;"></div>
     <script>
 function initMap() {
-  var myCenter = new google.maps.LatLng(51.086789,3.670192);
+  var myCenter = new google.maps.LatLng(50.775340, 3.637903);
   var mapCanvas = document.getElementById("map");
   var mapOptions = {center: myCenter, zoom: 15};
   var map = new google.maps.Map(mapCanvas, mapOptions);

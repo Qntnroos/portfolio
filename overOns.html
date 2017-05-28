@@ -70,39 +70,49 @@
 
   <div class="menu-overlay">
     <a href="index.html">Home</a>
-    <a href="overOns.html">Over Ons</a>
+    <a href="overOns.html" class="current">Over Ons</a>
     <a href="#">Diensten</a>
     <a href="projects.html">Projecten</a>
-    <a href="contact.html" class="current">Contact</a>
+    <a href="contact.html">Contact</a>
   </div>
 </div>
-  <div>
-        <form id="form">
-        <h2>Ask us your question(s):</h2>
-        <hr>
-        <input id="name" type="text" placeholder="FULL NAME">
-        <input id="email" type="text" placeholder="E-MAIL">
-        <input id="subject" type="text" placeholder="SUBJECT">
-        <textarea id="message" type="text" placeholder="QUESTION OR REMARK"></textarea>
-        <input id="submit" type="submit" value="Send us your Question">
+<div class="sf-grid__container">
+      <div class="sf-grid__row">
+        <section id="intro" class="intro">
+        <div class="sf-grid__column-12">
+          <div class="sf-grid__column-7">
+          <h1>Wie zijn wij?</h1>
+          <p>Surprix is een bedrijf opgericht aan het eind van 2016. We houden ons vooral bezig met het ontwerpen van websites, maar buiten dit maken we ook grafische ontwerpen. Ons bedrijf bestaat uit 3 mensen met elk hun passie in de digitale wereld. Samen beschikken we over heel uitgebreide kennis over de digitale wereld.</p>
+          </div></div>
+          <h1 class="sf-grid__column-12">Ons team:</h1>
+          <div class="sf-grid__column-3">
+          <img src="assets/images/jan.jpg">
+          </img>
+          <p>Naam: Jan Martens</p>
+          <p>Leeftijd: 20</p>
+          <p>Functie: Grafisch Ontwerper</p>
+          </div>
+          <div class="sf-grid__column-4 person2 sf-grid__offset-1">
+          <img src="assets/images/quinten.jpg">
+          </img>
+          <p>Naam: Quinten Roos</p>
+          <p>Leeftijd: 18</p>
+          <p>Functie: Developper</p>
+          </div>
+          <div class="sf-grid__column-3 person3 sf-grid__offset-1">
+          <img src="assets/images/ebbe.jpg">
+          </img>
+          <p>Naam: Ebbe Simoens</p>
+          <p>Leeftijd: 18</p>
+          <p>Functie: Grafisch Ontwerper</p>
+          </div>
 
-        </form>
-  </div>
-  <div id="map" style="height:100vh;"></div>
-    <script>
-function initMap() {
-  var myCenter = new google.maps.LatLng(50.775340, 3.637903);
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 15};
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
-  
-  var marker = new google.maps.Marker({position:myCenter, icon: image});
-  marker.setMap(map);
-}
-</script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChH9Z--QM1vqkJnQkJQOsj7CBEk5rwnfw&callback=initMap"
-  type="text/javascript"></script>
 
+        </section>
+      </div>
+    </div>
+    <footer>
+      <p>© 2017 - Quinten Roos - <a target="_blank" href="https://www.arteveldehogeschool.be">Arteveldehogeschool</a> </p>
+    </footer>
   </body>
 </html>

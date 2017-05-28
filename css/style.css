@@ -15,9 +15,9 @@ body{
     background-repeat: no-repeat;
 
 }
-/*::selection{
-    background: #FF0;
-}*/
+::selection{
+    background: #32acfc;
+}
 header{
     background-image: url('../assets/images/pexels-photo-173427.png');
     background-size:cover;
@@ -218,6 +218,38 @@ header p{
 }
 .project img{
     width: 100%;
+}
+.guide{
+    text-decoration: none;
+    color: black;
+}
+.last{
+    margin-bottom: 100px;
+}
+.sf-grid__column-7 p{
+    text-align: left;
+    margin-bottom: 100px;
+}
+.sf-grid__column-3 img{
+    width: 100%;
+}
+.sf-grid__column-3 p{
+    text-align: left;
+    padding: 5px 0px;
+}
+.person2 img{
+    width: 100%;
+    height: 400px;
+}
+.sf-grid__column-4 p{
+    text-align: center;
+    padding: 5px 0px;
+}
+.person3 p{
+    text-align: right;
+}
+.person3 img{
+    height: 400px;
 }
 #form {
   width: 40%;

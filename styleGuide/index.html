@@ -159,7 +159,7 @@ $(document).ready(function(){
     </section>
     </section>
     <script>
-function mapsyMap() {
+function initMap() {
   var myCenter = new google.maps.LatLng(51.086789,3.670192);
   var mapCanvas = document.getElementById("map");
   var mapOptions = {center: myCenter, zoom: 15};
@@ -169,6 +169,7 @@ function mapsyMap() {
 }
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9OFTKYjtbsQ0Jvyu028QtS-UzpubD8Vk&callback=myMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChH9Z--QM1vqkJnQkJQOsj7CBEk5rwnfw&callback=initMap"
+  type="text/javascript"></script>
 </body>
 </html>

@@ -95,9 +95,7 @@ function initMap() {
   var mapCanvas = document.getElementById("map");
   var mapOptions = {center: myCenter, zoom: 15};
   var map = new google.maps.Map(mapCanvas, mapOptions);
-  var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
-  
-  var marker = new google.maps.Marker({position:myCenter, icon: image});
+  var marker = new google.maps.Marker({position:myCenter});
   marker.setMap(map);
 }
 </script>

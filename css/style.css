@@ -203,6 +203,9 @@ header p{
 .project{
     background-color: rgb(252,247,248);
 }
+.project-last{
+    margin-bottom: 100px;
+}
 .project h4{
     color: rgba(51,73,95,1);
     padding: 10px 20px;
@@ -237,19 +240,13 @@ header p{
     text-align: left;
     padding: 5px 0px;
 }
-.person2 img{
+.person img{
     width: 100%;
     height: 400px;
 }
 .sf-grid__column-4 p{
     text-align: center;
     padding: 5px 0px;
-}
-.person3 p{
-    text-align: right;
-}
-.person3 img{
-    height: 400px;
 }
 #form {
   width: 40%;
